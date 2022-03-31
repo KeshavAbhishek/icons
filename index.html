@@ -28,7 +28,7 @@
 			font-size: 12pc;
 			padding: 2%;
 			color: red;
-			/* border: 1px solid red; */
+			border: 1px solid grey;
 			margin: 2% 0;
 			position: relative;
 			border-radius: 20px;
@@ -50,13 +50,18 @@
 		}
 
 		i:hover{
-			color: #000 !important;
 			cursor: pointer;
 		}
 
 		i:hover{
 			background: rgba(255, 215, 0, 0.75);
 			color: crimson !important;
+			transition: background 0.45s ease;
+		}
+		
+		i:not(:hover){
+			color: red !important;
+			background: white !important;
 			transition: background 0.45s ease;
 		}
 	</style>
